@@ -17,6 +17,31 @@
     justify-content: space-between;
 }
 
+.ground {
+    background-color: #000000;
+}
+
+
+
+.text-center {
+    text-align: center;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.col-2 {
+    width: calc(100% / 14 * 2);
+}
+
+.col-3 {
+    width: calc(100% / 14 * 3);
+}
+
+.col-8 {
+    width: calc(100% / 14 * 8);
+}
 
 
 
@@ -51,35 +76,35 @@ header{
 
 
 /*main*/
-main {
-    background-color:  #010001;
+#site_main .container {
+    height: calc(100vh - 120px);
+    overflow-y: auto;
 }
 
-.container{
-    width: 80%;
-    margin: auto;
-    padding: 2rem 0.5rem;
-}
-
-.row{
-    justify-content: space-between;
+#site_main .row {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.5rem;
+    width: 90%;
+    margin: auto;
 }
 
-.user{
+#site_main [class^="col-"] {
+    padding: .5rem;
+}
+
+#site_main .card {
+    height: 145px;
+    background-image: url(https://picsum.photos/seed/56/200/300);
+    background-position: center;
+    background-size: cover;
     position: relative;
 }
 
-img{
-    padding: 0.2rem 0;
-}
-img+div{
+#site_main .address {
     position: absolute;
-    bottom: 0.7rem;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(40, 40, 40, 0.7);
     color: white;
-    background-color: rgba(104, 104, 104, 0.657);
-    padding: 0.3rem;
-    font-size: small;
+    padding: .25rem;
 }
