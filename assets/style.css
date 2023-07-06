@@ -43,7 +43,9 @@
     width: calc(100% / 14 * 8);
 }
 
-
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 /*header*/
 
@@ -98,6 +100,7 @@ header{
     background-position: center;
     background-size: cover;
     position: relative;
+    font-size: 0.7rem;
 }
 
 #site_main .address {
@@ -108,3 +111,40 @@ header{
     color: white;
     padding: .25rem;
 }
+
+/*footer*/
+
+footer{
+    background-color: #222222;
+    color: white;
+}
+.footer_container{
+    justify-content: space-between;
+    align-content: center;
+}
+.f_section{
+    align-items: center;
+}
+.f_icon{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    padding: 1rem;
+}
+.f_icon>i{
+    padding-bottom: 1.3rem;
+}
+.fa-angle-up{
+    padding-left: 5px;
+    padding-right: 1.5rem;
+}
+.f_section_3{
+    height: 87.8px;
+    width: 15%;
+    background-color: #4b4b4a;
+    color: red;
+    justify-content: center;
+    align-items: center;
+}
+
