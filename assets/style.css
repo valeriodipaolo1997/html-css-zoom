@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*utilities*/
+
+.img-flow{
+    width: 100%;
+}
+.d-flex{
+    display: flex;
+}
+
+.justify-end{
+    justify-content: end;
+}
+.justify-between{
+    justify-content: space-between;
+}
+
+
+
+
+/*header*/
+
+
+header{
+    height: 100px;
+    background-color: #000000;
+}
+
+.menu{
+    margin: 1rem 0.5rem ;
+    color: white;
+    
+   
+}
+.menu> .speaker,.arrow{
+    border-radius: 10px;
+    height: 30px ;
+    padding: 0.5rem;
+}
+
+.speaker{
+    background-color: #494949;
+}
+
+.arrow{
+    background-color: #494949;
+    margin-left: 0.5rem;
+}
