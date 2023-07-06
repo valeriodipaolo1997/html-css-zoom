@@ -6,9 +6,6 @@
 
 /*utilities*/
 
-.img-flow{
-    width: 100%;
-}
 .d-flex{
     display: flex;
 }
@@ -50,4 +47,39 @@ header{
 .arrow{
     background-color: #494949;
     margin-left: 0.5rem;
+}
+
+
+/*main*/
+main {
+    background-color:  #010001;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    padding: 2rem 0.5rem;
+}
+
+.row{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.user{
+    position: relative;
+}
+
+img{
+    padding: 0.2rem 0;
+}
+img+div{
+    position: absolute;
+    bottom: 0.7rem;
+    color: white;
+    background-color: rgba(104, 104, 104, 0.657);
+    padding: 0.3rem;
+    font-size: small;
 }
