@@ -10,15 +10,9 @@
     display: flex;
 }
 
-.justify-end{
-    justify-content: end;
-}
-.justify-between{
-    justify-content: space-between;
-}
 
-.ground {
-    background-color: #000000;
+main {
+    background-color: black;
 }
 
 
@@ -31,16 +25,9 @@
     display: flex;
 }
 
-.col-2 {
-    width: calc(100% / 14 * 2);
-}
-
-.col-3 {
-    width: calc(100% / 14 * 3);
-}
-
-.col-8 {
-    width: calc(100% / 14 * 8);
+.justify-end {
+    justify-content: flex-end;
+    
 }
 
 body {
@@ -78,38 +65,37 @@ header{
 
 
 /*main*/
-#site_main .container {
-    height: calc(100vh - 120px);
-    overflow-y: auto;
+.container{
+    width: 80%;
+    margin: auto;
+    padding: 2rem 0.5rem;
+    
 }
 
-#site_main .row {
+.row{
+    justify-content: space-between;
     flex-wrap: wrap;
     justify-content: center;
-    width: 90%;
-    margin: auto;
+    gap: 0.5rem;
+    overflow: hidden;
+    height: 80vh;
+    overflow: auto;
 }
 
-#site_main [class^="col-"] {
-    padding: .5rem;
-}
-
-#site_main .card {
-    height: 145px;
-    background-image: url(https://picsum.photos/seed/56/200/300);
-    background-position: center;
-    background-size: cover;
+.address{
     position: relative;
-    font-size: 0.7rem;
 }
 
-#site_main .address {
+img{
+    padding: 0.2rem 0;
+}
+img+div{
     position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(40, 40, 40, 0.7);
+    bottom: 0.7rem;
     color: white;
-    padding: .25rem;
+    background-color: rgba(104, 104, 104, 0.657);
+    padding: 0.3rem;
+    font-size: small;
 }
 
 /*footer*/
@@ -141,7 +127,7 @@ footer{
 }
 .f_section_3{
     height: 87.8px;
-    width: 15%;
+    width: 10%;
     background-color: #4b4b4a;
     color: red;
     justify-content: center;
